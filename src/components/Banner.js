@@ -18,7 +18,7 @@ const Banner = () => {
     // 현재 상영중인 영화 정보를 가져오기(여러 영화) 
     // 다음 url를 줄일것 일뿐. https://api.themoviedb.org.w3/movie/now_playing
     const response = await axios.get(requests.fetchNowPlaying);
-    console.log(response)
+    // console.log(response)
 
     // 여러 영화 중 영화 하나의 ID를 랜덤으로 가져오기 
     const movieId = response.data.results[
